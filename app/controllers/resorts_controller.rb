@@ -1,7 +1,7 @@
 class ResortsController < ApplicationController
 
   def show
-    @resort = Resort.find_by_slug(params[:slug])
+    @weather = Weather.new(params[:slug])
   end
 
 end

@@ -1,5 +1,7 @@
+require_relative '../services/forecast_io_service'
+
 class Resort < ActiveRecord::Base
-  before_create
+  before_create :set_slug
 
   def to_param
     slug
