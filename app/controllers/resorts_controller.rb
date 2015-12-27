@@ -1,7 +1,7 @@
 class ResortsController < ApplicationController
 
   def show
-    @resort = Resort.find_by_name("copper-mountain")
+    @resort = Resort.find_by_slug(params[:slug])
   end
 
 end

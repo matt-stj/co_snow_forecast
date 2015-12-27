@@ -17,7 +17,7 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'capybara'
-  gem 'mocha'  
+  gem 'mocha'
 end
 
 group :development do
