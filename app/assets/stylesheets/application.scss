@@ -1,0 +1,12 @@
+@import "materialize/components/color";
+$primary-color: color("blue", "darken-2") !default;
+@import "materialize";
+@import "materialize/extras/nouislider";
+
+.nudge-left {
+  margin-right: 25px;
+}
+
+.nudge-right {
+  margin-left: 25px;
+}
