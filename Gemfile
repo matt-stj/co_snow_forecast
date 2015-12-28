@@ -10,9 +10,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'materialize-sass'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'figaro'
 gem 'forecast_io'
+gem 'bcrypt'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

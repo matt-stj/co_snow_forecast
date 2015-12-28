@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require materialize-sprockets
-//= require materialize/extras/nouislider
 //= require jquery_ujs
+//= require semantic-ui
 //= require turbolinks
+//= require semantic-ui/dropdown
 //= require_tree .

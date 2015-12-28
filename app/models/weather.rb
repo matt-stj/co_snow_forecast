@@ -10,8 +10,40 @@ class Weather
     data.currently.summary
   end
 
+  def next_hour_summary
+    if data.minutely
+      data.minutely.summary
+    else
+      current_condition
+    end
+  end
+
+  def next_24_hour_summary
+    data.hourly.summary
+  end
+
   def current_temp
-    data.currently.temperature
+    data.currently.fetch("temperature")
+  end
+
+  def current_feels_like_temp
+    data.currently.fetch("apparentTemperature")
+  end
+
+  def current_precip_prob
+    data.currently.fetch("precipProbability")
+  end
+
+  def current_precip_intensity
+    data.currently.fetch("precipIntensity")
+  end
+
+  def current_wind_speed
+    data.currently.fetch("windSpeed")
+  end
+
+  def current_wind_direction
+    data.currently.fetch("windBearing")
   end
 
   def week_summary
@@ -21,7 +53,6 @@ class Weather
   def daily_forecast
     data.daily
   end
-
 
   def todays_weather_summary
     daily_forecast.data.first.fetch("summary")
