@@ -1,0 +1,32 @@
+
+<h1><%= @user.name %> Profile</h1>
+
+<h2>Alert me for:</h2>
+<div class="ui statistics">
+  <div class="small statistic">
+    <div class="value">
+      <%= @user.pow_probability%>%
+    </div>
+    <div class="label">
+      Probabilty of Snow
+    </div>
+  </div>
+  <div class="small statistic">
+    <div class="value">
+      <%= @user.pow_amount%>"
+    </div>
+    <div class="label">
+      Inches of Pow
+    </div>
+  </div>
+</div>
+
+<h2>My Favorites:</h2>
+
+<% @user.favorites.each do |favorite| %>
+  <li>
+    <ul>
+      <%= link_to favorite.resort.name, resort_path(favorite.resort.slug) %>
+    </ul>
+    <% end %>
+  </li>

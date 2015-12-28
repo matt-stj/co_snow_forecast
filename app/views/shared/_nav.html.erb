@@ -59,8 +59,12 @@
         <div class="item">Monarch</div>
       </div>
     </div>
-    <a class="item">
-      Login
-    </a>
+    <% if current_user %>
+      <%= link_to "My Resorts", user_path(current_user), class: "item" %>
+      <%= link_to "Logout", logout_path, method: :delete, class: "item" %>
+    <% else %>
+      <%= link_to "Login", login_path, class:"item" %>
+      <%= link_to "Create Account", new_user_path, class:"item" %>
+    <% end %>
   </div>
 </div>

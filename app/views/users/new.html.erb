@@ -1,0 +1,18 @@
+<div class="center-box">
+  <h3>Create a new account</h3>
+  <br>
+
+  <%= form_for(User.new) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br/><br/>
+    <%= f.label :password %>
+    <%= f.password_field :password %><br/><br/>
+    <%= f.label :email %>
+    <%= f.text_field :email %><br/><br/>
+    <%= f.label :pow_probability %>
+    <%= f.text_field :pow_probability %><br/><br/>
+    <%= f.label :pow_amount %>
+    <%= f.text_field :pow_amount %><br/><br/>
+    <%= f.submit "Create Account", class: "btn" %>
+  <% end %>
+</div>

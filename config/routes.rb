@@ -7,5 +7,5 @@ post '/login', to: 'sessions#create'
 delete '/logout', to: 'sessions#destroy'
 
 resources :resorts, only: [:show], param: :slug
-
+resources :users, except: [:index]
 end
