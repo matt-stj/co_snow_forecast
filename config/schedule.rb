@@ -1,3 +1,3 @@
 every 2.hours do
-  runner "MyModel.some_method"
+  runner "UserMailer.powder_alert(User.first).deliver"
 end
