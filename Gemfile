@@ -14,6 +14,7 @@ gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'figaro'
 gem 'forecast_io'
 gem 'bcrypt'
+gem 'whenever', :require => false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
