@@ -3,10 +3,11 @@ $secondaryColor: #0D4F4A;
 $tertiaryColor: #241858;
 @import "semantic-ui";
 
-.nudge-left {
-  margin-right: 25px;
+.small-label {
+  font-weight: 100 !important;
+  text-transform: capitalize !important;
 }
 
-.nudge-right {
-  margin-left: 25px;
+.push-down {
+  margin-bottom: 25px !important;
 }
